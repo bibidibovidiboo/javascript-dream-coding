@@ -15,8 +15,10 @@ console.log(fruits[1]);
 console.log(fruits[2]);
 console.log(fruits[fruits.length - 1]);
 console.clear();
+
 // 3. Looping over an array
 // print all fruits
+
 // a. for
 for (let i = 0; i < fruits.length; i++) {
   console.log(fruits[i]);
@@ -28,7 +30,9 @@ for (let fruit of fruits) {
 }
 
 // c. forEach
-fruits.forEach((fruit) => console.log(fruit));
+fruits.forEach(fruit => console.log(fruit));
+
+// ctrl + 함수 클릭 시 api로 이동하여 확인할 수 있음
 
 // 4. Addtion, deletion, copy
 // push: add an item to the end
@@ -41,17 +45,23 @@ fruits.pop();
 console.log(fruits);
 
 // unshift: add an item to the benigging
+// 앞에서부터 데이터를 삽입
 fruits.unshift('🍓', '🍋');
 console.log(fruits);
 
 // shift: remove an item from the benigging
+// 앞에서부터 데이터를 빼기
 fruits.shift();
 fruits.shift();
 console.log(fruits);
 
 // note!! shift, unshift are slower than pop, push
+// 그래서 pop과 push를 사용하는게 좋다
+
 // splice: remove an item by index position
-fruits.push('🍓', '🍑', '🍋');
+// 지정된 위치에서 데이터 삭제가 가능하다
+
+fruits.push('🍓', '🍑', '🍋'); // 이모지도 문자열
 console.log(fruits);
 fruits.splice(1, 1);
 console.log(fruits);
@@ -59,6 +69,7 @@ fruits.splice(1, 0, '🍏', '🍉');
 console.log(fruits);
 
 // combine two arrays
+// 두가지 배열을 묶어서 가능
 const fruits2 = ['🍐', '🥥'];
 const newFruits = fruits.concat(fruits2);
 console.log(newFruits);
