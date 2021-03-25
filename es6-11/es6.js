@@ -167,10 +167,6 @@
   console.clear();
 }
 
-/**
- * Template Literals
- * https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Template_literals
- */
 {
   const weather = '🌤';
   const temparature = '16°C';
